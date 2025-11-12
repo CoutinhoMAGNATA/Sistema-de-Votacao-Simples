@@ -21,46 +21,36 @@ pip (gerenciador de pacotes do Python)
 
 1. Clonar o Repositório
 Descompacte o arquivo do projeto e navegue até o diretório principal:
-Bash
 unzip VotacaoTurma.zip
 cd VotacaoTurma
 
 
 3. Configurar o Ambiente Virtual
 É altamente recomendável usar um ambiente virtual para isolar as dependências do projeto:
-Bash
-- Cria o ambiente virtual
-python3.11 -m venv venv
 
-- Ativa o ambiente virtual
-source venv/bin/activate
+Cria o ambiente virtual: python3.11 -m venv venv
 
+Ativa o ambiente virtual: source venv/bin/activate
 
-- Ativa o ambiente virtual
-source venv/bin/activate
+Ativa o ambiente virtual: source venv/bin/activate
 
 3. Instalar as Dependências
-Instale todas as bibliotecas necessárias listadas no arquivo requirements.txt:
-Bash
-pip install -r requirements.txt
+Instale todas as bibliotecas necessárias listadas no arquivo requirements.txt: pip install -r requirements.txt
 
 5. Rodar as Migrações
-Aplique as migrações do banco de dados para criar as tabelas necessárias:
-Bash
-python manage.py migrate
+Aplique as migrações do banco de dados para criar as tabelas necessárias: python manage.py migrate
 
 7. Criar um Superusuário
-Crie um usuário administrador para acessar a interface do Django Admin e gerenciar as eleições:
-Bash
-python manage.py createsuperuser
+Crie um usuário administrador para acessar a interface do Django Admin e gerenciar as eleições: python manage.py createsuperuser
 
 9. Iniciar o Servidor
-Inicie o servidor de desenvolvimento do Django:
-Bash
-python manage.py runserver
+Inicie o servidor de desenvolvimento do Django: python manage.py runserver
 
 11. Acessar o Sistema
 O sistema estará acessível em http://127.0.0.1:8000/.
+
 Interface Administrativa: Acesse http://127.0.0.1:8000/admin com o superusuário criado para cadastrar eleições e candidatos.
+
 Interface de Votação: Acesse http://127.0.0.1:8000/votacao para que os usuários logados possam visualizar as eleições ativas e votar.
-Licença: Projeto open source para fins educativos e comerciais.
+
+- Licença: Projeto open source para fins educativos e comerciais.

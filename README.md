@@ -29,14 +29,14 @@ cd VotacaoTurma
 3. Configurar o Ambiente Virtual
 É altamente recomendável usar um ambiente virtual para isolar as dependências do projeto:
 Bash
-# Cria o ambiente virtual
+- Cria o ambiente virtual
 python3.11 -m venv venv
 
-# Ativa o ambiente virtual
+- Ativa o ambiente virtual
 source venv/bin/activate
 
 
-# Ativa o ambiente virtual
+- Ativa o ambiente virtual
 source venv/bin/activate
 
 3. Instalar as Dependências
